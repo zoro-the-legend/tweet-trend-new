@@ -3,7 +3,7 @@ pipeline {
     { 
     node {
         label 'slave'
-    }
+    } 
     }
         environment {
             PATH="/opt/maven/bin:$PATH"
