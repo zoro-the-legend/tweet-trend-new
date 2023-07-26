@@ -7,9 +7,9 @@ pipeline {
     }
 
     stages {
-        stage('Git clone') {
+        stage('Build') {
             steps {
-                git branch: 'main', url: 'https://github.com/zoro-the-legend/tweet-trend-new.git'
+               sh 'mvn clean install'
             }
         }
     }
