@@ -5,7 +5,9 @@ pipeline {
         label 'slave'
     }
     }
-
+        enviroment {
+            PATH="/opt/maven/bin:$PATH"
+        }
     stages {
         stage('Build') {
             steps {
