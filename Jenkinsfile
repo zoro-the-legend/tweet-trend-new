@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps { 
-               sh 'mvn clean install'
+               sh 'https://github.com/zoro-the-legend/hello-world-1.git mvn clean install'
             }
         }
     }  
